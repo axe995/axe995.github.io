@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "Nombre": "Calle 4" }, "geometry": { "type": "LineString", "coordinates": [ [ -85.497196261682262, 11.130841121495315, 0.0 ], [ -85.474766355140204, 8.147663551401854, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "cat": 2, "Nombre": "Calle 2" }, "geometry": { "type": "LineString", "coordinates": [ [ -84.846728971962634, 11.115887850467278, 0.0 ], [ -84.779439252336473, 8.147663551401854, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "cat": 3, "Nombre": "Calle Central" }, "geometry": { "type": "LineString", "coordinates": [ [ -84.158878504672913, 11.093457943925223, 0.0 ], [ -84.128971962616845, 8.162616822429891, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "cat": 4, "Nombre": "Calle 1" }, "geometry": { "type": "LineString", "coordinates": [ [ -83.530841121495342, 11.085981308411203, 0.0 ], [ -83.538317757009366, 8.147663551401854, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "cat": 5, "Nombre": "Calle 3" }, "geometry": { "type": "LineString", "coordinates": [ [ -82.92523364485983, 11.10093457943924, 0.0 ], [ -82.880373831775714, 8.132710280373818, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "cat": 6, "Nombre": "Calle 5" }, "geometry": { "type": "LineString", "coordinates": [ [ -82.409345794392536, 11.085981308411203, 0.0 ], [ -82.379439252336468, 8.147663551401854, 0.0 ] ] } }
+]
+}

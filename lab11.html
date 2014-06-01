@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Mapa Web</title>
+<link rel="stylesheet"
+href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css"/>
+<!--[if lte IE 8]>
+<link rel="stylesheet"
+href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+<![endif]-->
+<script
+src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<style type="text/css">
+#map { width: 600px; height: 400px }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+function onEachFeature(feature, layer) {
+layer.bindPopup("NOMBRE: "+feature.properties.Nombre);
+};
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET','avenidas.geojson',false);
+xhr.send(null);
+var dataA = JSON.parse(xhr.responseText);
+var style = {
+"color": "#000000",
+"weight": 5,
+"opacity": 0.65
+};
+
+var xhr2 = new XMLHttpRequest();
+xhr2.open('GET','calles.geojson',false);
+xhr2.send(null);
+var dataC = JSON.parse(xhr2.responseText);
+var style2 = {
+"color": "#000000",
+"weight": 5,
+"opacity": 0.65
+};
+
+var xhr3 = new XMLHttpRequest();
+xhr3.open('GET','quebradas.geojson',false);
+xhr3.send(null);
+var dataQ = JSON.parse(xhr3.responseText);
+var style3 = {
+"color": "#0094FF",
+"weight": 5,
+"opacity": 0.65
+};
+
+var xhr4 = new XMLHttpRequest();
+xhr4.open('GET','edificios.geojson',false);
+xhr4.send(null);
+var dataE = JSON.parse(xhr4.responseText);
+var style4 = {
+"color": "#B6FF00",
+"weight": 5,
+"opacity": 0.65
+};
+
+var map = L.map('map').setView([10.817438378897709,-85.424073718228698],8);
+L.geoJson(dataA, {
+style: style, onEachFeature: onEachFeature
+}).addTo(map);
+L.geoJson(dataC, {
+style: style2, onEachFeature: onEachFeature
+}).addTo(map);
+L.geoJson(dataQ, {
+style: style3, onEachFeature: onEachFeature
+}).addTo(map);
+L.geoJson(dataE, {
+style: style4, onEachFeature: onEachFeature
+}).addTo(map);
+</script>
+</body>
+</html>
