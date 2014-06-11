@@ -1,0 +1,347 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Proyecto 3 SIG</title>
+<link rel="stylesheet"
+href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css"/>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/
+leaflet-0.5/leaflet.ie.css" />
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+<script
+src="https://raw.github.com/lvoogdt/Leaflet.awesome-markers/master/dist/leaflet.awesome-markers.js"></script>
+<style type="text/css">
+#map { width: 1024px; height: 768px }
+.awesome-marker {
+background: url("https://raw.github.com/lvoogdt/Leaflet.awesome-markers/master/dist/images/markers-soft.png") no-repeat 0 0;
+width: 35px; height: 46px;
+position:absolute;
+left:0; top:0;
+display: block;
+text-align: center;
+}
+.awesome-marker-shadow {
+background: url("https://raw.github.com/lvoogdt/Leaflet.awesome-markers/master/dist/images/markers-shadow.png") no-repeat 0 0;
+width: 36px; height: 16px;
+}
+.awesome-marker i {
+color: #333; margin-top: 10px;
+display: inline-block; font-size: 14px;
+}
+.awesome-marker-icon-red { background-position: 0 0; }
+.awesome-marker-icon-darkred { background-position: -180px 0; }
+.awesome-marker-icon-orange { background-position: -36px 0; }
+.awesome-marker-icon-green { background-position: -72px 0; }
+.awesome-marker-icon-darkgreen { background-position: -252px 0; }
+.awesome-marker-icon-blue { background-position: -108px 0; }
+.awesome-marker-icon-darkblue { background-position: -216px 0; }
+.awesome-marker-icon-purple { background-position: -144px 0; }
+.awesome-marker-icon-darkpurple { background-position: -288px 0; }
+.awesome-marker-icon-cadetblue { background-position: -324px 0; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+var bancosMarker = L.AwesomeMarkers.icon({
+icon: "home",
+color: "blue",
+iconColor: "red"
+});
+var clinicas_y_farmaciasMarker = L.AwesomeMarkers.icon({
+icon: "medkit",
+color: "red",
+iconColor: "red"
+});
+var comerciosMarker = L.AwesomeMarkers.icon({
+icon: "flag",
+color: "darkpurple",
+iconColor: "red"
+});
+var escuelasMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "purple",
+iconColor: "red"
+});
+var hidrantesMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "green",
+iconColor: "red"
+});
+var hotelesMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "orange",
+iconColor: "red"
+});
+var iglesiasMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "white",
+iconColor: "red"
+});
+var paradasMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "blue",
+iconColor: "red"
+});
+var parqueosMarker = L.AwesomeMarkers.icon({
+icon: "star",
+color: "yellow",
+iconColor: "red"
+});
+var policiaMarker = L.AwesomeMarkers.icon({
+icon: "mobile-phone",
+color: "blue",
+iconColor: "red"
+});
+var puentesMarker = L.AwesomeMarkers.icon({
+icon: "mobile-phone",
+color: "white",
+iconColor: "red"
+});
+var restaurantesMarker = L.AwesomeMarkers.icon({
+icon: "food",
+color: "red",
+iconColor: "red"
+});
+var telefonosMarker = L.AwesomeMarkers.icon({
+icon: "mobile-phone",
+color: "blue",
+iconColor: "red"
+});
+var torres_telefonoMarker = L.AwesomeMarkers.icon({
+icon: "mobile-phone",
+color: "orange",
+iconColor: "white"
+});
+
+
+
+function onEachFeature(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.NDISTRITO+"</p>\n<p>ID distrito: "+feature.properties.cat+"</p>");
+};
+function onEachThiessen(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.b_NOMBRE+"</p>\n<p>Distrito: "+feature.properties.a_cat+"</p>\n<p>ID Localidad: "+feature.properties.cat+"</p>");
+};
+function onEachEdificio(feature, layer) {
+layer.bindPopup(feature.properties.Nombre);
+};
+function onEachEscuela(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>Distrito: "+feature.properties.distrito+"</p>\n<p>Parque: "+feature.properties.parque+"</p>");
+};
+function onEachBanco(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>Restaurante: "+feature.properties.Restaurant+"</p>");
+};
+function onEachRestaurante(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>ID: "+feature.properties.cat+"</p>");
+};
+function onEachComercio(feature, layer) {
+layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>Tipo: "+feature.properties.Tipo+"</p>\n<p>Distrito: "+feature.properties.distrito+"</p>\n<p>Localidad: "+feature.properties.localidad+"</p>");
+};
+
+function pointToLayer(feature, latlng) {
+return L.marker(latlng, {icon: clinicas_y_farmaciasMarker});
+};
+function pointToTorre(feature, latlng) {
+return L.marker(latlng, {icon: torres_telefonoMarker});
+};
+function pointToComercio(feature, latlng) {
+return L.marker(latlng, {icon: comerciosMarker});
+};
+function pointToRestaurante(feature, latlng) {
+return L.marker(latlng, {icon: restaurantesMarker});
+};
+function pointToBanco(feature, latlng) {
+return L.marker(latlng, {icon: bancosMarker});
+};
+function pointToEscuela(feature, latlng) {
+return L.marker(latlng, {icon: escuelasMarker});
+};
+function pointToOtro(feature, latlng) {
+return L.marker(latlng, {icon: hidrantesMarker});
+};
+
+var xhr = new XMLHttpRequest() || new ActiveXObject("Msxml2.XMLHTTP")
+|| new ActiveXObject("Microsoft.XMLHTTP");
+xhr.open("GET","distritos.geojson",false); xhr.send(null);
+var distritos = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_guada.geojson",false); xhr.send(null);
+var thiessen_guada = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_cblancos.geojson",false); xhr.send(null);
+var thiessen_cblancos = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_mataplat.geojson",false); xhr.send(null);
+var thiessen_mataplat = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_purral.geojson",false); xhr.send(null);
+var thiessen_purral = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_ipis.geojson",false); xhr.send(null);
+var thiessen_ipis = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_sanfran.geojson",false); xhr.send(null);
+var thiessen_sanfran = JSON.parse(xhr.responseText);
+xhr.open("GET","thiessen_rredondo.geojson",false); xhr.send(null);
+var thiessen_rredondo = JSON.parse(xhr.responseText);
+xhr.open("GET","calles.geojson",false); xhr.send(null);
+var calles = JSON.parse(xhr.responseText);
+xhr.open("GET","rios.geojson",false); xhr.send(null);
+var rios = JSON.parse(xhr.responseText);
+xhr.open("GET","clinicas_y_farmacias.geojson",false); xhr.send(null);
+var clinicas_y_farmacias = JSON.parse(xhr.responseText);
+xhr.open("GET","centros_comerciales.geojson",false); xhr.send(null);
+var centros_comerciales = JSON.parse(xhr.responseText);
+xhr.open("GET","torres_telefono.geojson",false); xhr.send(null);
+var torres_telefono = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_guada.geojson",false); xhr.send(null);
+var comercios_guada = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_sanfran.geojson",false); xhr.send(null);
+var comercios_sanfran = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_cblancos.geojson",false); xhr.send(null);
+var comercios_cblancos = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_ipis.geojson",false); xhr.send(null);
+var comercios_ipis = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_purral.geojson",false); xhr.send(null);
+var comercios_purral = JSON.parse(xhr.responseText);
+xhr.open("GET","comercios_mataplat.geojson",false); xhr.send(null);
+var comercios_mataplat = JSON.parse(xhr.responseText);
+xhr.open("GET","restaurantes.geojson",false); xhr.send(null);
+var restaurantes = JSON.parse(xhr.responseText);
+xhr.open("GET","bancos.geojson",false); xhr.send(null);
+var bancos = JSON.parse(xhr.responseText);
+xhr.open("GET","escuelas.geojson",false); xhr.send(null);
+var escuelas = JSON.parse(xhr.responseText);
+xhr.open("GET","hidrantes.geojson",false); xhr.send(null);
+var hidrantes = JSON.parse(xhr.responseText);
+xhr.open("GET","paradas.geojson",false); xhr.send(null);
+var paradas = JSON.parse(xhr.responseText);
+
+var stylePoligonos = {
+"color": "#B6FF00",
+"weight": 1,
+"opacity": 0.65
+};
+var styleEdificios = {
+"color": "#7F0000",
+"weight": 1,
+"opacity": 0.65
+};
+var styleCalles = {
+"color": "#000000",
+"weight": 1,
+"opacity": 0.65
+};
+var styleRios = {
+"color": "#0094FF",
+"weight": 1,
+"opacity": 0.65
+};
+
+var distritosLayer = L.geoJson(distritos, {
+style: stylePoligonos, onEachFeature: onEachFeature
+});
+var thiessen_guadaLayer = L.geoJson(thiessen_guada, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_ipisLayer = L.geoJson(thiessen_ipis, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_purralLayer = L.geoJson(thiessen_purral, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_cblancosLayer = L.geoJson(thiessen_cblancos, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_sanfranLayer = L.geoJson(thiessen_sanfran, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_mataplatLayer = L.geoJson(thiessen_mataplat, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var thiessen_rredondoLayer = L.geoJson(thiessen_rredondo, {
+style: stylePoligonos, onEachFeature: onEachThiessen
+});
+var callesLayer = L.geoJson(calles, {
+style: styleCalles
+});
+var riosLayer = L.geoJson(rios, {
+style: styleRios
+});
+var clinicas_y_farmaciasLayer = L.geoJson(clinicas_y_farmacias, {
+pointToLayer: pointToLayer, onEachFeature: onEachEdificio
+});
+var centros_comercialesLayer = L.geoJson(centros_comerciales, {
+style: styleEdificios, onEachFeature: onEachEdificio
+});
+var torres_telefonoLayer = L.geoJson(torres_telefono, {
+pointToLayer: pointToTorre
+});
+var comercios_guadaLayer = L.geoJson(comercios_guada, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var comercios_cblancosLayer = L.geoJson(comercios_cblancos, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var comercios_sanfranLayer = L.geoJson(comercios_sanfran, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var comercios_ipisLayer = L.geoJson(comercios_ipis, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var comercios_purralLayer = L.geoJson(comercios_purral, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var comercios_mataplatLayer = L.geoJson(comercios_mataplat, {
+pointToLayer: pointToComercio, onEachFeature: onEachComercio
+});
+var restaurantesLayer = L.geoJson(restaurantes, {
+pointToLayer: pointToRestaurante, onEachFeature: onEachRestaurante
+});
+var bancosLayer = L.geoJson(bancos, {
+pointToLayer: pointToBanco, onEachFeature: onEachBanco
+});
+var escuelasLayer = L.geoJson(escuelas, {
+pointToLayer: pointToEscuela, onEachFeature: onEachEscuela
+});
+var hidrantesLayer = L.geoJson(hidrantes, {
+pointToLayer: pointToOtro
+});
+var paradasLayer = L.geoJson(paradas, {
+pointToLayer: pointToOtro
+});
+
+var map = L.map("map", {
+center: new L.LatLng( 9.945735770551606, -84.053255878473408),
+zoom: 15,
+layers: [distritosLayer, thiessen_sanfranLayer, thiessen_cblancosLayer, thiessen_guadaLayer, thiessen_purralLayer, thiessen_ipisLayer, thiessen_mataplatLayer, thiessen_rredondoLayer, callesLayer, riosLayer, clinicas_y_farmaciasLayer, centros_comercialesLayer, torres_telefonoLayer, comercios_guadaLayer, comercios_sanfranLayer, comercios_cblancosLayer, comercios_purralLayer, comercios_ipisLayer, comercios_mataplatLayer,  restaurantesLayer, bancosLayer, escuelasLayer, hidrantesLayer, paradasLayer]
+});
+var overlayMaps = {
+"Distritos": distritosLayer,
+"Calles": callesLayer,
+"Rios": riosLayer,
+"Clinicas y farmacias": clinicas_y_farmaciasLayer,
+"Torres de telefono": torres_telefonoLayer,
+"Centros comerciales": centros_comercialesLayer,
+"Comercios de Guadalupe": comercios_guadaLayer,
+"Comercios de San Francisco": comercios_sanfranLayer,
+"Comercios de Calle Blancos": comercios_cblancosLayer,
+"Comercios de Ipis": comercios_ipisLayer,
+"Comercios de Purral": comercios_purralLayer,
+"Comercios de Mata de Platano": comercios_mataplatLayer,
+"Restaurantes": restaurantesLayer,
+"Bancos": bancosLayer,
+"Escuelas": escuelasLayer,
+"Hidrantes": hidrantesLayer,
+"Paradas": paradasLayer,
+"Regiones de Guadalupe": thiessen_guadaLayer,
+"Regiones de Calle Blancos": thiessen_cblancosLayer,
+"Regiones de San Francisco": thiessen_sanfranLayer,
+"Regiones de Purral": thiessen_purralLayer,
+"Regiones de Ipis": thiessen_ipisLayer,
+"Regiones de Mata de Platano": thiessen_mataplatLayer,
+"Regiones de Rancho Redondo": thiessen_rredondoLayer
+};
+L.control.layers(null, overlayMaps).addTo(map);
+
+L.control.scale().addTo(map);
+
+</script>
+</body>
+</html>

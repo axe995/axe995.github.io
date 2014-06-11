@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 56, "cat_": 56, "Nombre": "Panaderia San Antoni", "Tipo": "Abastecedor", "distrito": 2, "localidad": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.035078944456671, 9.962218509733372 ] } },
+{ "type": "Feature", "properties": { "cat": 57, "cat_": 57, "Nombre": "Musmanni El Alto", "Tipo": "Abastecedor", "distrito": 2, "localidad": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.034394888449683, 9.962754255817552 ] } },
+{ "type": "Feature", "id": -1294967238, "properties": { "cat": 58, "cat_": 58, "Nombre": "Auto Mania", "Tipo": "Taller", "distrito": 2, "localidad": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.033793248829099, 9.963298118366559 ] } },
+{ "type": "Feature", "id": -294967237, "properties": { "cat": 59, "cat_": 59, "Nombre": "Ferreteria Nino Jesu", "Tipo": "Ferreteria", "distrito": 2, "localidad": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.033587207863135, 9.963549755955501 ] } },
+{ "type": "Feature", "id": 705032764, "properties": { "cat": 60, "cat_": 60, "Nombre": "Repuestos Chato", "Tipo": "Taller", "distrito": 2, "localidad": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.03334820034263, 9.964280315597554 ] } },
+{ "type": "Feature", "id": 1705032765, "properties": { "cat": 61, "cat_": 61, "Nombre": "Los Jardines", "Tipo": "Restaurante", "distrito": 2, "localidad": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.032334478790119, 9.965092046613789 ] } },
+{ "type": "Feature", "id": -1589934530, "properties": { "cat": 62, "cat_": 62, "Nombre": "El Galeron de las Of", "Tipo": "Abastecedor", "distrito": 2, "localidad": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.029392213796257, 9.96474300252442 ] } },
+{ "type": "Feature", "id": -589934529, "properties": { "cat": 63, "cat_": 63, "Nombre": "Super Zetillal", "Tipo": "Abastecedor", "distrito": 2, "localidad": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.014277048533629, 9.967965558173489 ] } }
+]
+}

@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "cat_": 1, "Nombre": null }, "geometry": { "type": "Point", "coordinates": [ -84.066267389885851, 9.943720664567328 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "cat_": 2, "Nombre": null }, "geometry": { "type": "Point", "coordinates": [ -84.055187248874887, 9.945789069937886 ] } },
+{ "type": "Feature", "id": -1294967293, "properties": { "cat": 3, "cat_": 3, "Nombre": "Farmacia Bazzano" }, "geometry": { "type": "Point", "coordinates": [ -84.060547868440494, 9.948707379609017 ] } },
+{ "type": "Feature", "id": -294967292, "properties": { "cat": 4, "cat_": 4, "Nombre": "Hospital La Catolica" }, "geometry": { "type": "Point", "coordinates": [ -84.058844993564236, 9.949286525593015 ] } },
+{ "type": "Feature", "id": 705032709, "properties": { "cat": 5, "cat_": 5, "Nombre": null }, "geometry": { "type": "Point", "coordinates": [ -84.057088665216554, 9.951949079630658 ] } },
+{ "type": "Feature", "id": 1705032710, "properties": { "cat": 6, "cat_": 6, "Nombre": "Cruz Roja" }, "geometry": { "type": "Point", "coordinates": [ -84.052820023710595, 9.945435561583958 ] } },
+{ "type": "Feature", "id": -1589934585, "properties": { "cat": 7, "cat_": 7, "Nombre": "Clinica Dr Ricardo J" }, "geometry": { "type": "Point", "coordinates": [ -84.048727015039418, 9.950347037005718 ] } },
+{ "type": "Feature", "id": -589934584, "properties": { "cat": 8, "cat_": 8, "Nombre": "Farmacia Chavarria E" }, "geometry": { "type": "Point", "coordinates": [ -84.039525381739438, 9.957236516640247 ] } },
+{ "type": "Feature", "id": 410065417, "properties": { "cat": 9, "cat_": 9, "Nombre": "Clinica Jerusalen" }, "geometry": { "type": "Point", "coordinates": [ -84.037707963710076, 9.96026001965074 ] } },
+{ "type": "Feature", "id": 1410065418, "properties": { "cat": 10, "cat_": 10, "Nombre": "Asembis" }, "geometry": { "type": "Point", "coordinates": [ -84.030972826307149, 9.956228676078448 ] } },
+{ "type": "Feature", "id": -1884901877, "properties": { "cat": 11, "cat_": 11, "Nombre": "Laboratorio Botica S" }, "geometry": { "type": "Point", "coordinates": [ -84.030575743376332, 9.964704969468146 ] } },
+{ "type": "Feature", "id": -884901876, "properties": { "cat": 12, "cat_": 12, "Nombre": "Cruz Roja Ipis" }, "geometry": { "type": "Point", "coordinates": [ -84.017174194462299, 9.962945047342322 ] } },
+{ "type": "Feature", "id": 115098125, "properties": { "cat": 13, "cat_": 13, "Nombre": "Farmacia Leisa" }, "geometry": { "type": "Point", "coordinates": [ -84.033045852313975, 9.950719035608648 ] } }
+]
+}

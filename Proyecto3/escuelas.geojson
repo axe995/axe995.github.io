@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "Nombre": "ULACIT", "distrito": 7, "parque": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.077538436151897, 9.941178388397409 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "Nombre": "Liceo Napoleon Quesa", "distrito": 6, "parque": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.061930022487957, 9.944412641639485 ] } },
+{ "type": "Feature", "id": -1294967293, "properties": { "cat": 3, "Nombre": "Colegio Tecnico de C", "distrito": 6, "parque": 7 }, "geometry": { "type": "Point", "coordinates": [ -84.06347253694986, 9.951693355043911 ] } },
+{ "type": "Feature", "id": -294967292, "properties": { "cat": 4, "Nombre": "Escuela Santa Monica", "distrito": 6, "parque": 7 }, "geometry": { "type": "Point", "coordinates": [ -84.065931396636628, 9.953092316510411 ] } },
+{ "type": "Feature", "id": 705032709, "properties": { "cat": 5, "Nombre": "Escuela Pilar Jimene", "distrito": 5, "parque": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.055332336868773, 9.948790114812429 ] } },
+{ "type": "Feature", "id": 1705032710, "properties": { "cat": 6, "Nombre": "Convento y Kinder Sa", "distrito": 6, "parque": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.055591968015804, 9.952340187434675 ] } },
+{ "type": "Feature", "id": -1589934585, "properties": { "cat": 7, "Nombre": "Colegio Madre del Di", "distrito": 5, "parque": 8 }, "geometry": { "type": "Point", "coordinates": [ -84.041067896201355, 9.955273481031789 ] } },
+{ "type": "Feature", "id": -589934584, "properties": { "cat": 8, "Nombre": "Escuela Juan Enrique", "distrito": 3, "parque": 10 }, "geometry": { "type": "Point", "coordinates": [ -84.0324695235078, 9.957063529302332 ] } },
+{ "type": "Feature", "id": 410065417, "properties": { "cat": 9, "Nombre": "Colegio de Purral", "distrito": 3, "parque": 10 }, "geometry": { "type": "Point", "coordinates": [ -84.026391100182721, 9.956153463971385 ] } },
+{ "type": "Feature", "id": 1410065418, "properties": { "cat": 10, "Nombre": "Centro de Formacion", "distrito": 4, "parque": 10 }, "geometry": { "type": "Point", "coordinates": [ -84.033324779051043, 9.951941558322108 ] } },
+{ "type": "Feature", "id": -1884901877, "properties": { "cat": 11, "Nombre": "Escuela Juan Flores", "distrito": 2, "parque": 9 }, "geometry": { "type": "Point", "coordinates": [ -84.036470897656514, 9.961704070903771 ] } },
+{ "type": "Feature", "id": -884901876, "properties": { "cat": 12, "Nombre": "Escuela de Los Cuadr", "distrito": 3, "parque": 12 }, "geometry": { "type": "Point", "coordinates": [ -84.009301261738614, 9.959598160690279 ] } },
+{ "type": "Feature", "id": 115098125, "properties": { "cat": 13, "Nombre": "Colegio Asambleas de", "distrito": 3, "parque": 12 }, "geometry": { "type": "Point", "coordinates": [ -84.007346391925523, 9.960199850709767 ] } },
+{ "type": "Feature", "id": 1115098126, "properties": { "cat": 14, "Nombre": "Jose Fabio Garnier U", "distrito": 1, "parque": 15 }, "geometry": { "type": "Point", "coordinates": [ -83.949359339431226, 9.96049714449809 ] } },
+{ "type": "Feature", "id": 2115098127, "properties": { "cat": 15, "Nombre": "Jose Cubero", "distrito": 4, "parque": 11 }, "geometry": { "type": "Point", "coordinates": [ -84.011139656155322, 9.954048851088626 ] } },
+{ "type": "Feature", "id": -1179869168, "properties": { "cat": 16, "Nombre": "Roberto Cantillano", "distrito": 3, "parque": 14 }, "geometry": { "type": "Point", "coordinates": [ -84.008368593151687, 9.965347552164703 ] } },
+{ "type": "Feature", "id": -179869167, "properties": { "cat": 17, "Nombre": "Filomena Blanco", "distrito": 3, "parque": 15 }, "geometry": { "type": "Point", "coordinates": [ -83.997693127320815, 9.965655604646662 ] } }
+]
+}

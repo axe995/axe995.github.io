@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "cat_": 1, "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.0384858757713, 9.953973993285461 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "cat_": 2, "distrito": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.035982917458796, 9.955360710959122 ] } },
+{ "type": "Feature", "id": -1294967293, "properties": { "cat": 3, "cat_": 3, "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.051016310823258, 9.942987899608895 ] } },
+{ "type": "Feature", "id": -294967292, "properties": { "cat": 4, "cat_": 4, "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.065533469035813, 9.939721275968774 ] } },
+{ "type": "Feature", "id": 705032709, "properties": { "cat": 5, "cat_": 5, "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.043929810100977, 9.950229826147343 ] } },
+{ "type": "Feature", "id": 1705032710, "properties": { "cat": 6, "cat_": 6, "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.034276185284327, 9.962391385721535 ] } },
+{ "type": "Feature", "id": -1589934585, "properties": { "cat": 7, "cat_": 7, "distrito": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.036369526106796, 9.960501418519149 ] } },
+{ "type": "Feature", "id": -589934584, "properties": { "cat": 8, "cat_": 8, "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.02136725021245, 9.964925642737901 ] } },
+{ "type": "Feature", "id": 410065417, "properties": { "cat": 9, "cat_": 9, "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.019099464321457, 9.960114832969836 ] } },
+{ "type": "Feature", "id": 1410065418, "properties": { "cat": 10, "cat_": 10, "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.010944157367263, 9.950578911129847 ] } },
+{ "type": "Feature", "id": -1884901877, "properties": { "cat": 11, "cat_": 11, "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.004664134899869, 9.958181898352811 ] } },
+{ "type": "Feature", "id": -884901876, "properties": { "cat": 12, "cat_": 12, "distrito": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.007149977126545, 9.963765900445392 ] } },
+{ "type": "Feature", "id": 115098125, "properties": { "cat": 13, "cat_": 13, "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.012557774251249, 9.962735014945519 ] } },
+{ "type": "Feature", "id": 1115098126, "properties": { "cat": 14, "cat_": 14, "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -83.97016762259635, 9.953886447104821 ] } },
+{ "type": "Feature", "id": 2115098127, "properties": { "cat": 15, "cat_": 15, "distrito": 1 }, "geometry": { "type": "Point", "coordinates": [ -83.96371315506039, 9.964839736042844 ] } },
+{ "type": "Feature", "id": -1179869168, "properties": { "cat": 16, "cat_": 16, "distrito": 1 }, "geometry": { "type": "Point", "coordinates": [ -83.933839437073118, 9.959985971018288 ] } }
+]
+}

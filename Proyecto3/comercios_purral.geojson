@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 64, "cat_": 64, "Nombre": "Super Purral", "Tipo": "Abastecedor", "distrito": 3, "localidad": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.011491374673923, 9.961666527999098 ] } }
+]
+}

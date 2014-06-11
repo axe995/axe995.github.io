@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "cat_": 1, "Nombre": "Banco Improsa", "Restaurant": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.077277818742658, 9.94224443742803 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "cat_": 2, "Nombre": "Banco Nacional (Cent", "Restaurant": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.067688359707859, 9.944752170969037 ] } },
+{ "type": "Feature", "id": -1294967293, "properties": { "cat": 3, "cat_": 3, "Nombre": "Banco Nacional Calle", "Restaurant": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.06693356134177, 9.944709797751063 ] } },
+{ "type": "Feature", "id": -294967292, "properties": { "cat": 4, "cat_": 4, "Nombre": "BCR Calle Blancos", "Restaurant": 13 }, "geometry": { "type": "Point", "coordinates": [ -84.064731740201239, 9.945137381789557 ] } },
+{ "type": "Feature", "id": 705032709, "properties": { "cat": 5, "cat_": 5, "Nombre": "Bancredito Calle Bla", "Restaurant": 13 }, "geometry": { "type": "Point", "coordinates": [ -84.064661344498703, 9.945345395443827 ] } },
+{ "type": "Feature", "id": 1705032710, "properties": { "cat": 6, "cat_": 6, "Nombre": "BPDC", "Restaurant": 33 }, "geometry": { "type": "Point", "coordinates": [ -84.056757471452499, 9.945202867583893 ] } },
+{ "type": "Feature", "id": -1589934585, "properties": { "cat": 7, "cat_": 7, "Nombre": "Banco Nacional", "Restaurant": 40 }, "geometry": { "type": "Point", "coordinates": [ -84.05126660665448, 9.948038004683196 ] } },
+{ "type": "Feature", "id": -589934584, "properties": { "cat": 8, "cat_": 8, "Nombre": "BCR", "Restaurant": 46 }, "geometry": { "type": "Point", "coordinates": [ -84.049929088306229, 9.95025679046744 ] } },
+{ "type": "Feature", "id": 410065417, "properties": { "cat": 9, "cat_": 9, "Nombre": "Banca Promerica", "Restaurant": 46 }, "geometry": { "type": "Point", "coordinates": [ -84.049428496643728, 9.950383907946499 ] } },
+{ "type": "Feature", "id": 1410065418, "properties": { "cat": 10, "cat_": 10, "Nombre": "Scotiabank", "Restaurant": 46 }, "geometry": { "type": "Point", "coordinates": [ -84.048869241895787, 9.951000234416179 ] } },
+{ "type": "Feature", "id": -1884901877, "properties": { "cat": 11, "cat_": 11, "Nombre": "Scotiabank", "Restaurant": 45 }, "geometry": { "type": "Point", "coordinates": [ -84.048145730508566, 9.951227504508346 ] } },
+{ "type": "Feature", "id": -884901876, "properties": { "cat": 12, "cat_": 12, "Nombre": "HSBC Cruce Novacentr", "Restaurant": 45 }, "geometry": { "type": "Point", "coordinates": [ -84.047586475760625, 9.950060336084313 ] } },
+{ "type": "Feature", "id": 115098125, "properties": { "cat": 13, "cat_": 13, "Nombre": "BNCR El Dorado", "Restaurant": 25 }, "geometry": { "type": "Point", "coordinates": [ -84.05717202392313, 9.951381585836796 ] } },
+{ "type": "Feature", "id": 1115098126, "properties": { "cat": 14, "cat_": 14, "Nombre": "BCR Guadalupe", "Restaurant": 38 }, "geometry": { "type": "Point", "coordinates": [ -84.052948281770767, 9.947040316580102 ] } },
+{ "type": "Feature", "id": 2115098127, "properties": { "cat": 15, "cat_": 15, "Nombre": "Bank of America", "Restaurant": 69 }, "geometry": { "type": "Point", "coordinates": [ -84.071745994758331, 9.946147747698495 ] } },
+{ "type": "Feature", "id": -1179869168, "properties": { "cat": 16, "cat_": null, "Nombre": "Banco Popular", "Restaurant": 45 }, "geometry": { "type": "Point", "coordinates": [ -84.042209830983708, 9.954376249453457 ] } },
+{ "type": "Feature", "id": -179869167, "properties": { "cat": 17, "cat_": null, "Nombre": "BNCR", "Restaurant": 45 }, "geometry": { "type": "Point", "coordinates": [ -84.04046664504898, 9.956432688882794 ] } }
+]
+}

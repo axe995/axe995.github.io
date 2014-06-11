@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "cat_": 1, "Nombre": "Iglesia de Guadalupe", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.052170945842931, 9.946849592704787 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "cat_": 2, "Nombre": "Convento y Kinder Sa", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.055561423175007, 9.95238531522809 ] } },
+{ "type": "Feature", "id": -1294967293, "properties": { "cat": 3, "cat_": 3, "Nombre": "Iglesia San Antonio", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.05786755865762, 9.948775072049724 ] } },
+{ "type": "Feature", "id": -294967292, "properties": { "cat": 4, "cat_": 4, "Nombre": null, "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.055179612664617, 9.945962063248274 ] } },
+{ "type": "Feature", "id": 705032709, "properties": { "cat": 5, "cat_": 5, "Nombre": null, "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.066893559122747, 9.945345304070589 ] } },
+{ "type": "Feature", "id": 1705032710, "properties": { "cat": 6, "cat_": 6, "Nombre": "Iglesia de Ladrillo", "distrito": 7 }, "geometry": { "type": "Point", "coordinates": [ -84.072284723529179, 9.941178388397422 ] } },
+{ "type": "Feature", "id": -1589934585, "properties": { "cat": 7, "cat_": 7, "Nombre": null, "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.042335507095757, 9.951227033223216 ] } },
+{ "type": "Feature", "id": -589934584, "properties": { "cat": 8, "cat_": 8, "Nombre": "Iglesia Vida Abundan", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.039876647408988, 9.956852935897691 ] } },
+{ "type": "Feature", "id": 410065417, "properties": { "cat": 9, "cat_": 9, "Nombre": "Iglesia de Purral Ab", "distrito": 3 }, "geometry": { "type": "Point", "coordinates": [ -84.032057168156612, 9.955965433628036 ] } },
+{ "type": "Feature", "id": 1410065418, "properties": { "cat": 10, "cat_": 10, "Nombre": "Seminario Nazareno d", "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.029521946367737, 9.96601362335354 ] } },
+{ "type": "Feature", "id": -1884901877, "properties": { "cat": 11, "cat_": 11, "Nombre": "Iglesia de Techo Ver", "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.013012459899358, 9.965111103994543 ] } },
+{ "type": "Feature", "id": -884901876, "properties": { "cat": 12, "cat_": 12, "Nombre": "Iglesia de Mata de P", "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.015410229904475, 9.954009911636526 ] } },
+{ "type": "Feature", "id": 115098125, "properties": { "cat": 13, "cat_": 13, "Nombre": "Iglesia del Sagrado", "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -83.992150333612713, 9.958883652351014 ] } },
+{ "type": "Feature", "id": 1115098126, "properties": { "cat": 14, "cat_": 14, "Nombre": "Iglesia San Francisc", "distrito": 4 }, "geometry": { "type": "Point", "coordinates": [ -84.036241811350266, 9.953092316510411 ] } }
+]
+}

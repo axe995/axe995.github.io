@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 1, "cat_": 2, "Nombre": "Hotel de Paso Ruta 3" }, "geometry": { "type": "Point", "coordinates": [ -84.074177278156597, 9.94835577399695 ] } },
+{ "type": "Feature", "properties": { "cat": 2, "cat_": 3, "Nombre": "Villa Tournon" }, "geometry": { "type": "Point", "coordinates": [ -84.075978076199135, 9.941057865533463 ] } }
+]
+}

@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "cat": 13, "cat_": 13, "Nombre": "AlfaTea", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.062618379966452, 9.946898640669362 ] } },
+{ "type": "Feature", "properties": { "cat": 19, "cat_": 19, "Nombre": "Soda Mil Sabores", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.060689836525057, 9.948988955255524 ] } },
+{ "type": "Feature", "id": -1294967275, "properties": { "cat": 21, "cat_": 21, "Nombre": "Spaguetti House", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.059890397577135, 9.949269015805337 ] } },
+{ "type": "Feature", "id": -294967274, "properties": { "cat": 22, "cat_": 22, "Nombre": "Subway Montelimar", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.058596460310952, 9.950226902247369 ] } },
+{ "type": "Feature", "id": 705032728, "properties": { "cat": 24, "cat_": 24, "Nombre": "Cafe Restaurante Tra", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.057908283484636, 9.950628726655673 ] } },
+{ "type": "Feature", "id": 1705032729, "properties": { "cat": 25, "cat_": 25, "Nombre": "Restaurante Montana", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.056799783087783, 9.951180727056975 ] } },
+{ "type": "Feature", "id": -1589934559, "properties": { "cat": 33, "cat_": 33, "Nombre": "Restaurante Marisque", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.056288801492286, 9.945037640604458 ] } },
+{ "type": "Feature", "id": -589934558, "properties": { "cat": 34, "cat_": 34, "Nombre": "Soda La Noche Buena", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.055308046494332, 9.945593709346015 ] } },
+{ "type": "Feature", "id": 410065446, "properties": { "cat": 38, "cat_": 38, "Nombre": "Cafe Montero", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.053025112591527, 9.945861596139224 ] } },
+{ "type": "Feature", "id": 1410065448, "properties": { "cat": 40, "cat_": 40, "Nombre": "Soda Jade", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.051516892720699, 9.946519135518681 ] } },
+{ "type": "Feature", "id": -1884901843, "properties": { "cat": 45, "cat_": 45, "Nombre": "McDonalds", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.048249083000599, 9.951077227052815 ] } },
+{ "type": "Feature", "id": -884901842, "properties": { "cat": 46, "cat_": 46, "Nombre": "Burger King", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.048595231823441, 9.951138109412174 ] } },
+{ "type": "Feature", "id": 115098173, "properties": { "cat": 61, "cat_": 61, "Nombre": "Los Jardines", "Tipo": "Restaurante", "distrito": 2 }, "geometry": { "type": "Point", "coordinates": [ -84.032334478790119, 9.965092046613789 ] } },
+{ "type": "Feature", "id": 1115098181, "properties": { "cat": 69, "cat_": 69, "Nombre": "Pizza Hut", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.064161626801592, 9.942113190518226 ] } },
+{ "type": "Feature", "id": 2115098182, "properties": { "cat": 70, "cat_": 70, "Nombre": "McDonalds", "Tipo": "Restaurante", "distrito": 5 }, "geometry": { "type": "Point", "coordinates": [ -84.064136901885675, 9.941983304550117 ] } },
+{ "type": "Feature", "id": -1179869110, "properties": { "cat": 74, "cat_": 74, "Nombre": "Restaurante Tribu", "Tipo": "Restaurante", "distrito": 6 }, "geometry": { "type": "Point", "coordinates": [ -84.057119146585151, 9.951830138099227 ] } }
+]
+}
