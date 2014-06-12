@@ -45,75 +45,81 @@ display: inline-block; font-size: 14px;
 <body>
 <div id="map"></div>
 <script type="text/javascript">
-var bancosMarker = L.AwesomeMarkers.icon({
-icon: "home",
-color: "blue",
-iconColor: "red"
+
+var bancoIcon = L.icon({
+    iconUrl: 'icons/banco.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var clinicas_y_farmaciasMarker = L.AwesomeMarkers.icon({
-icon: "medkit",
-color: "red",
-iconColor: "red"
+var hospitalIcon = L.icon({
+    iconUrl: 'icons/hospital.gif',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var comerciosMarker = L.AwesomeMarkers.icon({
-icon: "flag",
-color: "darkpurple",
-iconColor: "red"
+var comercioIcon = L.icon({
+    iconUrl: 'icons/comercio.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var escuelasMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "purple",
-iconColor: "red"
+var escuelaIcon = L.icon({
+    iconUrl: 'icons/escuela.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var hidrantesMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "green",
-iconColor: "red"
+var hidranteIcon = L.icon({
+    iconUrl: 'icons/hidrante.gif',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var hotelesMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "orange",
-iconColor: "red"
+var hotelIcon = L.icon({
+    iconUrl: 'icons/hotel.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var iglesiasMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "white",
-iconColor: "red"
+var iglesiaIcon = L.icon({
+    iconUrl: 'icons/iglesia.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var paradasMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "blue",
-iconColor: "red"
+var paradaIcon = L.icon({
+    iconUrl: 'icons/parada.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var parqueosMarker = L.AwesomeMarkers.icon({
-icon: "star",
-color: "yellow",
-iconColor: "red"
+var parqueoIcon = L.icon({
+    iconUrl: 'icons/parqueo.gif',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var policiaMarker = L.AwesomeMarkers.icon({
-icon: "mobile-phone",
-color: "blue",
-iconColor: "red"
+var policiaIcon = L.icon({
+    iconUrl: 'icons/policia.gif',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var puentesMarker = L.AwesomeMarkers.icon({
-icon: "mobile-phone",
-color: "white",
-iconColor: "red"
+var puenteIcon = L.icon({
+    iconUrl: 'icons/puente.jpg',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var restaurantesMarker = L.AwesomeMarkers.icon({
-icon: "food",
-color: "red",
-iconColor: "red"
+var restauranteIcon = L.icon({
+    iconUrl: 'icons/restaurant.jpg',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var telefonosMarker = L.AwesomeMarkers.icon({
-icon: "mobile-phone",
-color: "blue",
-iconColor: "red"
+var telefonoIcon = L.icon({
+    iconUrl: 'icons/telefono.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var torres_telefonoMarker = L.AwesomeMarkers.icon({
-icon: "mobile-phone",
-color: "orange",
-iconColor: "white"
+var torreIcon = L.icon({
+    iconUrl: 'icons/torre.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+var hotelIcon = L.icon({
+    iconUrl: 'icons/hotel.png',
+    iconSize:     [30, 30], // size of the icon
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -139,28 +145,56 @@ layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>ID: "+feature.
 function onEachComercio(feature, layer) {
 layer.bindPopup("<p>Nombre: "+feature.properties.Nombre+"</p>\n<p>Tipo: "+feature.properties.Tipo+"</p>\n<p>Distrito: "+feature.properties.distrito+"</p>\n<p>Localidad: "+feature.properties.localidad+"</p>");
 };
+function onEachParada(feature, layer) {
+layer.bindPopup("<p>Parada</p>\n<p>ID: "+feature.properties.cat+"</p>\n<p>Telefono: "+feature.properties.telefono+"</p>");
+};
+function onEachTelefono(feature, layer) {
+layer.bindPopup("<p>Telefono</p>\n<p>ID: "+feature.properties.cat+"</p>");
+};
 
 function pointToLayer(feature, latlng) {
-return L.marker(latlng, {icon: clinicas_y_farmaciasMarker});
+return L.marker(latlng, {icon: hospitalIcon});
 };
 function pointToTorre(feature, latlng) {
-return L.marker(latlng, {icon: torres_telefonoMarker});
+return L.marker(latlng, {icon: torreIcon});
 };
 function pointToComercio(feature, latlng) {
-return L.marker(latlng, {icon: comerciosMarker});
+return L.marker(latlng, {icon: comercioIcon});
 };
 function pointToRestaurante(feature, latlng) {
-return L.marker(latlng, {icon: restaurantesMarker});
+return L.marker(latlng, {icon: restauranteIcon});
 };
 function pointToBanco(feature, latlng) {
-return L.marker(latlng, {icon: bancosMarker});
+return L.marker(latlng, {icon: bancoIcon});
 };
 function pointToEscuela(feature, latlng) {
-return L.marker(latlng, {icon: escuelasMarker});
+return L.marker(latlng, {icon: escuelaIcon});
 };
-function pointToOtro(feature, latlng) {
-return L.marker(latlng, {icon: hidrantesMarker});
+function pointToHidrante(feature, latlng) {
+return L.marker(latlng, {icon: hidranteIcon});
 };
+function pointToHotel(feature, latlng) {
+return L.marker(latlng, {icon: hotelIcon});
+};
+function pointToIglesia(feature, latlng) {
+return L.marker(latlng, {icon: iglesiaIcon});
+};
+function pointToParqueo(feature, latlng) {
+return L.marker(latlng, {icon: parqueoIcon});
+};
+function pointToPolicia(feature, latlng) {
+return L.marker(latlng, {icon: policiaIcon});
+};
+function pointToPuente(feature, latlng) {
+return L.marker(latlng, {icon: puenteIcon});
+};
+function pointToTelefono(feature, latlng) {
+return L.marker(latlng, {icon: telefonoIcon});
+};
+function pointToParada(feature, latlng) {
+return L.marker(latlng, {icon: paradaIcon});
+};
+
 
 var xhr = new XMLHttpRequest() || new ActiveXObject("Msxml2.XMLHTTP")
 || new ActiveXObject("Microsoft.XMLHTTP");
@@ -212,6 +246,25 @@ xhr.open("GET","hidrantes.geojson",false); xhr.send(null);
 var hidrantes = JSON.parse(xhr.responseText);
 xhr.open("GET","paradas.geojson",false); xhr.send(null);
 var paradas = JSON.parse(xhr.responseText);
+xhr.open("GET","cementerios.geojson",false); xhr.send(null);
+var cementerios = JSON.parse(xhr.responseText);
+xhr.open("GET","hoteles1.geojson",false); xhr.send(null);
+var hoteles = JSON.parse(xhr.responseText);
+xhr.open("GET","iglesias.geojson",false); xhr.send(null);
+var iglesias = JSON.parse(xhr.responseText);
+xhr.open("GET","parqueos.geojson",false); xhr.send(null);
+var parqueos = JSON.parse(xhr.responseText);
+xhr.open("GET","policia.geojson",false); xhr.send(null);
+var policia = JSON.parse(xhr.responseText);
+xhr.open("GET","puentes.geojson",false); xhr.send(null);
+var puentes = JSON.parse(xhr.responseText);
+xhr.open("GET","telefonos.geojson",false); xhr.send(null);
+var telefonos = JSON.parse(xhr.responseText);
+xhr.open("GET","edificios_estatales.geojson",false); xhr.send(null);
+var estatales = JSON.parse(xhr.responseText);
+xhr.open("GET","parques_plazas.geojson",false); xhr.send(null);
+var plazas = JSON.parse(xhr.responseText);
+
 
 var stylePoligonos = {
 "color": "#B6FF00",
@@ -301,16 +354,43 @@ var escuelasLayer = L.geoJson(escuelas, {
 pointToLayer: pointToEscuela, onEachFeature: onEachEscuela
 });
 var hidrantesLayer = L.geoJson(hidrantes, {
-pointToLayer: pointToOtro
+pointToLayer: pointToHidrante
 });
 var paradasLayer = L.geoJson(paradas, {
-pointToLayer: pointToOtro
+pointToLayer: pointToParada, onEachFeature: onEachParada
+});
+var cementeriosLayer = L.geoJson(cementerios, {
+style: styleEdificios, onEachFeature: onEachEdificio
+});
+var hotelesLayer = L.geoJson(hoteles, {
+pointToLayer: pointToHotel, onEachFeature: onEachEdificio
+});
+var iglesiasLayer = L.geoJson(iglesias, {
+pointToLayer: pointToIglesia, onEachFeature: onEachEdificio
+});
+var parqueosLayer = L.geoJson(parqueos, {
+pointToLayer: pointToParqueo
+});
+var policiaLayer = L.geoJson(policia, {
+pointToLayer: pointToPolicia
+});
+var puentesLayer = L.geoJson(puentes, {
+pointToLayer: pointToPuente
+});
+var telefonosLayer = L.geoJson(telefonos, {
+pointToLayer: pointToTelefono, onEachFeature: onEachTelefono
+});
+var estatalesLayer = L.geoJson(estatales, {
+style: styleEdificios, onEachFeature: onEachEdificio
+});
+var plazasLayer = L.geoJson(plazas, {
+style: styleEdificios, onEachFeature: onEachEdificio
 });
 
 var map = L.map("map", {
 center: new L.LatLng( 9.945735770551606, -84.053255878473408),
 zoom: 15,
-layers: [distritosLayer, thiessen_sanfranLayer, thiessen_cblancosLayer, thiessen_guadaLayer, thiessen_purralLayer, thiessen_ipisLayer, thiessen_mataplatLayer, thiessen_rredondoLayer, callesLayer, riosLayer, clinicas_y_farmaciasLayer, centros_comercialesLayer, torres_telefonoLayer, comercios_guadaLayer, comercios_sanfranLayer, comercios_cblancosLayer, comercios_purralLayer, comercios_ipisLayer, comercios_mataplatLayer,  restaurantesLayer, bancosLayer, escuelasLayer, hidrantesLayer, paradasLayer]
+layers: [distritosLayer, thiessen_sanfranLayer, thiessen_cblancosLayer, thiessen_guadaLayer, thiessen_purralLayer, thiessen_ipisLayer, thiessen_mataplatLayer, thiessen_rredondoLayer, callesLayer, riosLayer, clinicas_y_farmaciasLayer, centros_comercialesLayer, torres_telefonoLayer, comercios_guadaLayer, comercios_sanfranLayer, comercios_cblancosLayer, comercios_purralLayer, comercios_ipisLayer, comercios_mataplatLayer,  restaurantesLayer, bancosLayer, escuelasLayer, hidrantesLayer, paradasLayer, cementeriosLayer, hotelesLayer, iglesiasLayer, parqueosLayer, policiaLayer, puentesLayer, telefonosLayer, estatalesLayer, plazasLayer]
 });
 var overlayMaps = {
 "Distritos": distritosLayer,
@@ -319,6 +399,7 @@ var overlayMaps = {
 "Clinicas y farmacias": clinicas_y_farmaciasLayer,
 "Torres de telefono": torres_telefonoLayer,
 "Centros comerciales": centros_comercialesLayer,
+"Cementerios": cementeriosLayer,
 "Comercios de Guadalupe": comercios_guadaLayer,
 "Comercios de San Francisco": comercios_sanfranLayer,
 "Comercios de Calle Blancos": comercios_cblancosLayer,
@@ -330,6 +411,14 @@ var overlayMaps = {
 "Escuelas": escuelasLayer,
 "Hidrantes": hidrantesLayer,
 "Paradas": paradasLayer,
+"Hoteles": hotelesLayer,
+"Iglesias": iglesiasLayer,
+"Parqueos": parqueosLayer,
+"Estaciones de Policia": policiaLayer,
+"Puentes": puentesLayer,
+"Telefonos": telefonosLayer,
+"Edificios gubernamentales": estatalesLayer,
+"Plazas y parques": plazasLayer,
 "Regiones de Guadalupe": thiessen_guadaLayer,
 "Regiones de Calle Blancos": thiessen_cblancosLayer,
 "Regiones de San Francisco": thiessen_sanfranLayer,
